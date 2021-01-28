@@ -1,0 +1,133 @@
+.Background {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card {
+    height: 50vh;
+    width: 50vw;
+    max-width: 350px;
+    max-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    box-shadow: 7px 7px 5px 0px rgba(20, 20, 20, 0.75);
+    border-radius: 5px;
+}
+
+.Form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Label {
+    display: flex;
+    align-items: flex-start;
+    /* left: -50px; */
+    color: white;
+    width: 50%;
+    margin: 5px;
+    font-size: 1rem;
+}
+
+.Input {
+    padding: 8px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.InputDiv {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.Input:focus + .Underline {
+    left: 5%;
+}
+
+.Underline {
+    transition: all 0.3s;
+    display: inline-block;
+    bottom: 3px;
+    left: -100%;
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    background-color: rgb(83, 160, 233);
+}
+
+.UserMethods {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    width: 100%;
+    max-width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 90%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #c1ddff;
+    background-image: linear-gradient(#72a7e4, #72a7e4);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.5s, color 0.5s;
+}
+
+.SignUp {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #cfffc1;
+    background-image: linear-gradient(#539e64, #4b7c56);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.5s, color 0.5s;
+}
+
+.SignUp:hover:enabled {
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+.EmailInUse {
+    font-weight: 800;
+    color: red;
+    margin: 2px;
+    font-size: 0.75rem;
+}
+
+.Link {
+    color: #72a7e4;
+}
+
+.Login:hover:enabled {
+    background-size: 100% 100%;
+    color: #fff;
+}

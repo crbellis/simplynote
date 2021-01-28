@@ -1,0 +1,157 @@
+.Sidebar {
+    position: fixed;
+    color: rgb(199, 199, 199);
+    background-color: rgb(44, 44, 44);
+    width: 40%;
+    max-width: 275px;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 500;
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-weight: 800;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-left: 20%;
+    padding-bottom: 15px;
+    border-bottom: gray solid 2px;
+    background: rgb(44, 44, 44);
+    z-index: 1;
+    width: 100%;
+    max-width: 275px;
+    white-space: nowrap;
+    transition: font-size 0.2s ease-in-out;
+}
+
+.SideNote {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden; /* "overflow" value must be different from  visible"*/
+    -o-text-overflow: ellipsis; /* Opera < 11*/
+    text-overflow: ellipsis;
+    /* top: 900px; */
+    width: 230px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: rgb(53, 53, 53);
+    transition: color 0.1s, background-color 0.1s ease-in;
+}
+
+.SideNote:hover {
+    color: rgb(238, 238, 238);
+    background-color: rgb(32, 32, 32);
+    transition: color 0.1s, background-color 0.1s ease-in;
+    border-radius: 10px;
+}
+
+.Name {
+    font-weight: 800;
+}
+
+.Note {
+    align-items: left;
+}
+
+.Link {
+    color: rgb(199, 199, 199);
+    text-decoration: none;
+}
+
+.NewNote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+    outline: none;
+    margin-left: 25%;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.NewNote:hover {
+    background-color: rgb(32, 32, 32);
+    cursor: pointer;
+}
+
+@media (max-width: 1500px) {
+    .SideNote {
+        width: 200px;
+        margin-left: 0px;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 1100px) {
+    .Header {
+        font-size: 1.5rem;
+        padding-left: 0;
+        justify-content: center;
+    }
+    .NewNote {
+        margin-left: 10%;
+    }
+
+    .SideNote {
+        width: 200px;
+        font-size: 0.8rem;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 600px) {
+    .Header {
+        font-size: 0.8rem;
+    }
+    .NewNote {
+        margin-left: 5%;
+        width: 20px;
+        height: 20px;
+    }
+    .NewNote img {
+        width: 20px;
+    }
+
+    .SideNote {
+        width: 150px;
+        font-size: 0.2rem;
+        margin-left: 5px;
+        margin-right: 5px;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 400px) {
+    .Header {
+        font-size: 0.8rem;
+    }
+    .NewNote {
+        margin-left: 5%;
+        width: 20px;
+        height: 20px;
+    }
+    .NewNote img {
+        width: 15px;
+    }
+
+    .SideNote {
+        width: 100px;
+        font-size: 0.2rem;
+        white-space: normal;
+    }
+}
